@@ -15,7 +15,6 @@ declare global {
 const abi = [
   "function totalSupply() public view virtual override returns (uint256)",
   "function mint(uint256 _mintAmount) public payable ",
-  "function is_paused() public view returns (bool)",
 ]
 const contractAddress = "0x3951DC8dBEfA6A562122e1d031Bc7756672a6303"
 const notify = () => toast('Starting to execute a transaction')
@@ -108,7 +107,6 @@ const Home: NextPage = () => {
         <h3 className="text-xs lg:text-4xl text-white font-semibold "></h3>
         <h1 className="text-sm lg:text-2xl pt-1 text-white font-semibold ">Please Change Goeril network</h1>
         <h1 className="text-sm lg:text-2xl pt-1 text-white font-semibold "></h1>
-        <h1 className="text-base lg:text-5xl pt-1 pb-2 text-white font-semibold "> {mintNum} / 3000</h1>
         <h3 className="sm:text-lg lg:text-3xl pt-1 text-white font-semibold ">Price free</h3>  
         {/* ... */}
         {(!getAccountFlag) && <a href="#_" className="px-5 mt-4 mb-4 py-2.5 relative rounded group text-white font-medium inline-block">
@@ -139,9 +137,9 @@ const Home: NextPage = () => {
       <div className="">
       <Header />
       <Seo
-        pageTitle={'SJB_Hushimiinari'}
-        pageDescription={'SJB_Hushimiinari'}
-        pageImg={'https://sjb-hushimiinari.vercel.app/_next/image?url=%2Fmain_grap.png&w=3840&q=75'}
+        pageTitle={'Shizuk'}
+        pageDescription={'Shizuk'}
+        pageImg={'https://shizuk-mint-site.vercel.app/_next/image?url=%2Fmain_grap.png&w=3840&q=75'}
         pageImgWidth={1920}
         pageImgHeight={1005}
       />
